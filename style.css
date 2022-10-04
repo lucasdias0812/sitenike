@@ -1,0 +1,171 @@
+/**
+ * Folha de estilo personalizada do site ...
+ * @author Seu Nome
+ */
+
+
+/* Layout */
+.flexFooter {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.flexDestaque {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-top: 25px;
+}
+
+/* Smartphone Portrait */
+
+/*
+body {
+  background-color: #00ffff;
+}
+*/
+
+/** Background video
+
+.video-background-holder {
+  position: relative;
+  background-color: black;
+  height: calc(100vh - 72px);
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-background-holder video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.video-background-content {
+  position: relative;
+  z-index: 2;
+}
+
+.video-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+End Background video */
+
+/* Banner */
+main {
+  background:url(img/background.jpg);
+  height: 50vh; /* 100% da tela (largura) */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Conteúdo */
+.conteudo {
+  background:url(img/bgNike.png);
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.destaque {
+  padding: 25px 0px 50px 0px; /*top right bottom left*/
+}
+
+
+/* Rodapé */
+footer {
+  background-color: #343538;
+  color: #fff;
+  padding: 50px 0px;
+  text-align: center;
+}
+
+#social {
+  margin-bottom: 25px;
+}
+
+/* Smartphone Landscape */
+@media (min-width: 576px) {
+  /*
+  body {
+    background-color: #ff0;
+  }
+  */
+
+  main {
+    height: 100vh;
+  }
+
+  /* Rodapé */
+  .flexFooter {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #social {
+    margin: 0;
+  }
+
+}
+
+/* Tablet Portrait */
+@media (min-width: 768px) {
+  /*
+  body {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  */
+
+  main {
+    height: 50vh;
+  }
+}
+
+/* Tablet Landscape */
+@media (min-width: 992px) {
+  /*
+  body {
+    background-color: #00ff00;
+  }
+  */
+
+  main {
+    height: 100vh;
+  }
+
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  /*
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+  */
+}
